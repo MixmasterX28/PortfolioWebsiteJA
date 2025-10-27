@@ -65,12 +65,119 @@
                 </span>
                 <span id="typed"></span>
               </h1>
+
+              <div class="carousel slide small-carousel" id="homeCarousel" data-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="item active">
+      <div class="project-slide">
+        <a href="./work.html" class="black-image-project-hover">
+          <img src="./assets/images/TefnutbannerMain.jpg" alt="Tefnut's Pantheon" class="img-responsive">
+        </a>
+        <div class="card-container">
+          <h4>001/009</h4>
+          <h3>Tefnut's Pantheon</h3>
+          <p>A Platform fighter about the Egyptian god Tefnut.</p>
+          <a href="./work.html" class="btn btn-default">More info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="project-slide">
+        <a href="./work2.html" class="black-image-project-hover">
+          <img src="./assets/images/GameOver.png" alt="Eyes of Evil" class="img-responsive">
+        </a>
+        <div class="card-container">
+          <h4>002/009</h4>
+          <h3>Eyes of Evil</h3>
+          <p>A tower defense game with powerful abilities and hordes of enemies.</p>
+          <a href="./work2.html" class="btn btn-default">More info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="project-slide">
+        <a href="./work3.html" class="black-image-project-hover">
+          <img src="./assets/images/DDVScover.jpg" alt="Darkest Dungeon VS" class="img-responsive">
+        </a>
+        <div class="card-container">
+          <h4>003/009</h4>
+          <h3>Darkest Dungeon VS</h3>
+          <p>A vertical slice of Darkest Dungeon’s core combat mechanics.</p>
+          <a href="./work3.html" class="btn btn-default">More info</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#homeCarousel" data-slide="prev">‹</a>
+  <a class="right carousel-control" href="#homeCarousel" data-slide="next">›</a>
+</div>
+
+
+<style>
+/* === Small carousel: floating style === */
+.small-carousel {
+  width: 350px;             /* controls the size */
+  position: absolute;       /* makes it float instead of affecting layout */
+  top: 50%;                 /* vertically center it — tweak as needed */
+  right: 50px;              /* distance from the right edge */
+  transform: translateY(-50%);
+  z-index: 10;              /* stays above scrolling text */
+}
+
+/* Prevent layout push-downs */
+.home-section {
+  position: relative;       /* parent must be positioned for absolute child */
+}
+
+/* === Arrows: white color === */
+.small-carousel .carousel-control.left,
+.small-carousel .carousel-control.right {
+  background: none !important;
+  color: white !important;
+  opacity: 0.8;
+  text-shadow: none;
+}
+
+.small-carousel .carousel-control:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+/* === Inside button: white background, black text === */
+.small-carousel .btn.btn-default {
+  background-color: white;
+  color: black;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.small-carousel .btn.btn-default:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+/* === Text inside carousel: black === */
+.small-carousel h3,
+.small-carousel h4,
+.small-carousel p {
+  color: black;
+}
+</style>
+
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+  
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
